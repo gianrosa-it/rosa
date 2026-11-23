@@ -1,0 +1,711 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>DNSC | Student Enrollment Portal</title>
+<link rel="stylesheet" href="StudentEnrollmentPortal.css">
+</head>
+
+<body>
+
+<header class="site-header">
+    <div class="site-header__contact" aria-label="DNSC contact information">
+        <div class="site-header__contact-list">
+            <a class="site-header__contact-item" href="tel:+630846453064">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.62 10.79a15.05 15.05 0 0 0 6.59 6.59l2.2-2.2a1 1 0 0 1 1.01-.24c1.12.37 2.33.56 3.58.56a1 1 0 0 1 1 1V20a1 1 0 0 1-1 1C10.61 21 3 13.39 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.19 2.46.56 3.58a1 1 0 0 1-.25 1.01l-2.19 2.2z"/></svg>
+                <span>+63 084-645-3064</span>
+            </a>
+            <a class="site-header__contact-item" href="mailto:info@dnsc.edu.ph">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2zm0 4-8 5-8-5V6l8 5 8-5v2z"/></svg>
+                <span>info@dnsc.edu.ph</span>
+            </a>
+            <span class="site-header__contact-item">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5z"/></svg>
+                <span>8102 Asuncion, Davao del Norte</span>
+            </span>
+        </div>
+        <div class="site-header__actions">
+            <nav class="site-header__social" aria-label="DNSC social media">
+                <a href="https://x.com/officialdnsc" target="_blank" rel="noopener noreferrer" aria-label="DNSC on X">
+                    <svg viewBox="0 0 512 512" aria-hidden="true"><path d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z"/></svg>
+                </a>
+                <a href="https://www.instagram.com/officialdnsc/" target="_blank" rel="noopener noreferrer" aria-label="DNSC on Instagram">
+                    <svg viewBox="0 0 448 512" aria-hidden="true"><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/></svg>
+                </a>
+                <a href="https://www.facebook.com/officialdnsc" target="_blank" rel="noopener noreferrer" aria-label="DNSC on Facebook">
+                    <svg viewBox="0 0 320 512" aria-hidden="true"><path d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z"/></svg>
+                </a>
+            </nav>
+        </div>
+    </div>
+    <div class="site-header__banner">
+        <img class="site-header__logo" alt="Davao del Norte State College logo" src="dnsc%20logo.png">
+        <div class="site-header__identity">
+            <h1>DNSC</h1>
+            <p><span>DAVAO DEL NORTE STATE COLLEGE</span></p>
+        </div>
+    </div>
+</header>
+
+<!-- LOGIN PAGE -->
+<div class="container" id="loginPage">
+    <div class="card login-card">
+        <img class="logo" alt="DNSC logo" src="dnsc%20logo.png">
+        <h2>Student Login</h2>
+        <p>Welcome to the DNSC Enrollment Portal.</p>
+        <br>
+
+        <form id="loginForm">
+            <label>Email Address</label>
+            <input type="email" id="email"
+                   placeholder="Enter your email" required>
+
+            <label>Password</label>
+            <input type="password" id="password"
+                   placeholder="Enter your password" required>
+
+            <button type="submit" class="full-width">
+                Log In
+            </button>
+        </form>
+
+        <div class="demo">
+            <b>DEMO ACCOUNT</b><br>
+            Email: student@dnsc.edu.ph<br>
+            Password: dnsc2026
+        </div>
+
+        <p class="login-note">
+            This is a demonstration enrollment website.
+        </p>
+    </div>
+</div>
+
+<!-- MAIN DASHBOARD -->
+<div class="container hidden" id="dashboard">
+
+    <div class="card">
+        <div class="dashboard-heading">
+            <div>
+                <h2>Student Dashboard</h2>
+                <p>Welcome, <b id="studentEmail"></b>!</p>
+            </div>
+            <button class="danger" onclick="logout()">Log Out</button>
+        </div>
+
+        <div class="dashboard-stats">
+            <div class="stat">
+                <h2>01</h2>
+                <p>Enrollment Application</p>
+            </div>
+            <div class="stat">
+                <h2 id="dashStatus">Pending</h2>
+                <p>Application Status</p>
+            </div>
+            <div class="stat">
+                <h2>2026-2027</h2>
+                <p>Academic Year</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="card">
+        <h2>Enrollment Application</h2>
+        <p>
+            Complete the following sections to submit your
+            application for admission to Davao del Norte State College.
+        </p>
+        <br>
+        <button onclick="startApplication()">
+            Start Enrollment Application →
+        </button>
+        <button class="secondary hidden" onclick="showReceipt()" id="receiptButton">
+            View Submitted Application
+        </button>
+    </div>
+
+</div>
+
+<!-- APPLICATION FORM -->
+<div class="container hidden" id="application">
+
+    <div class="card">
+        <h2>Enrollment Application Form</h2>
+        <p>Please provide accurate and complete information.</p>
+
+        <div class="progress">
+            <div class="progress-bar" id="progressBar"></div>
+        </div>
+
+        <div class="nav">
+            <button class="active" onclick="goTo(0)">1. Personal</button>
+            <button onclick="goTo(1)">2. Academic</button>
+            <button onclick="goTo(2)">3. Guardian</button>
+            <button onclick="goTo(3)">4. Documents</button>
+            <button onclick="goTo(4)">5. Review</button>
+        </div>
+
+        <form id="enrollmentForm">
+
+        <!-- SECTION 1 -->
+        <div class="section">
+            <h3>1. Personal Information</h3>
+            <div class="grid">
+
+                <div>
+                    <label>First Name *</label>
+                    <input name="firstName" required>
+                </div>
+
+                <div>
+                    <label>Last Name *</label>
+                    <input name="lastName" required>
+                </div>
+
+                <div>
+                    <label>Middle Name</label>
+                    <input name="middleName">
+                </div>
+
+                <div>
+                    <label>Suffix</label>
+                    <input name="suffix" placeholder="Jr., III, etc.">
+                </div>
+
+                <div>
+                    <label>Date of Birth *</label>
+                    <input type="date" name="birthdate" required>
+                </div>
+
+                <div>
+                    <label>Gender *</label>
+                    <select name="gender" required>
+                        <option value="">Select Gender</option>
+                        <option>Male</option>
+                        <option>Female</option>
+                        <option>Prefer not to say</option>
+                    </select>
+                </div>
+
+                <div>
+                    <label>Place of Birth *</label>
+                    <input name="birthplace" required>
+                </div>
+
+                <div>
+                    <label>Civil Status</label>
+                    <select name="civilStatus">
+                        <option>Single</option>
+                        <option>Married</option>
+                        <option>Others</option>
+                    </select>
+                </div>
+
+                <div>
+                    <label>Nationality *</label>
+                    <input name="nationality" value="Filipino" required>
+                </div>
+
+                <div>
+                    <label>Contact Number *</label>
+                    <input type="tel" name="contact" placeholder="09XXXXXXXXX" required>
+                </div>
+
+                <div class="full">
+                    <label>Email Address *</label>
+                    <input type="email" name="studentEmail" required>
+                </div>
+
+                <div class="full">
+                    <label>Complete Home Address *</label>
+                    <textarea name="address" rows="3" required></textarea>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- SECTION 2 -->
+        <div class="section hidden">
+            <h3>2. Academic Information</h3>
+
+            <label>Academic Year *</label>
+            <select name="academicYear" required>
+                <option value="">Select Academic Year</option>
+                <option>2026-2027</option>
+                <option>2027-2028</option>
+            </select>
+
+            <label>Semester *</label>
+            <select name="semester" required>
+                <option value="">Select Semester</option>
+                <option>First Semester</option>
+                <option>Second Semester</option>
+            </select>
+
+            <label>Campus *</label>
+            <select name="campus" required>
+                <option value="">Select Campus</option>
+                <option>Asuncion Campus</option>
+            </select>
+
+            <label>Application Type *</label>
+            <select name="applicationType" required>
+                <option value="">Select Type</option>
+                <option>Freshman</option>
+                <option>Transferee</option>
+                <option>Returning Student</option>
+            </select>
+
+            <label>Preferred Degree Program *</label>
+            <select name="program" required>
+                <option value="">Select Program</option>
+                <option>BS Information Technology</option>
+            </select>
+
+            <label>Year Level *</label>
+            <select name="yearLevel" required>
+                <option value="">Select Year Level</option>
+                <option>First Year</option>
+                <option>Second Year</option>
+                <option>Third Year</option>
+                <option>Fourth Year</option>
+            </select>
+
+            <label>Senior High School / Previous School *</label>
+            <input name="previousSchool" required>
+
+            <label>Strand (if applicable)</label>
+            <select name="strand">
+                <option value="">Select Strand</option>
+                <option>STEM</option>
+                <option>HUMSS</option>
+                <option>ABM</option>
+                <option>GAS</option>
+                <option>TVL</option>
+                <option>Others</option>
+            </select>
+        </div>
+
+        <!-- SECTION 3 -->
+        <div class="section hidden">
+            <h3>3. Parent / Guardian Information</h3>
+
+            <label>Parent / Guardian Full Name *</label>
+            <input name="guardian" required>
+
+            <label>Relationship to Student *</label>
+            <select name="relationship" required>
+                <option value="">Select Relationship</option>
+                <option>Mother</option>
+                <option>Father</option>
+                <option>Guardian</option>
+                <option>Other</option>
+            </select>
+
+            <label>Contact Number *</label>
+            <input name="guardianContact" type="tel" required>
+
+            <label>Occupation</label>
+            <input name="occupation">
+
+            <label>Guardian Address</label>
+            <textarea name="guardianAddress" rows="3"></textarea>
+        </div>
+
+        <!-- SECTION 4 -->
+        <div class="section hidden">
+            <h3>4. Required Documents</h3>
+            <p>Upload your documents for demonstration purposes.</p>
+            <br>
+
+            <div class="upload">
+                <label>PSA Birth Certificate</label>
+                <input type="file" name="birthCertificate"
+                       accept=".pdf,.jpg,.jpeg,.png">
+            </div>
+
+            <div class="upload">
+                <label>Form 138 / Report Card</label>
+                <input type="file" name="reportCard"
+                       accept=".pdf,.jpg,.jpeg,.png">
+            </div>
+
+            <div class="upload">
+                <label>Certificate of Good Moral</label>
+                <input type="file" name="goodMoral"
+                       accept=".pdf,.jpg,.jpeg,.png">
+            </div>
+
+            <div class="upload">
+                <label>2x2 ID Picture</label>
+                <input type="file" name="idPicture"
+                       accept=".jpg,.jpeg,.png">
+            </div>
+
+            <p class="document-note">
+                Note: File uploads in this prototype are only
+                displayed locally. They are not transmitted to DNSC.
+            </p>
+        </div>
+
+        <!-- SECTION 5 -->
+        <div class="section hidden">
+            <h3>5. Review Your Application</h3>
+            <p>Check your information before submitting.</p>
+            <br>
+
+            <div id="reviewContent"></div>
+
+            <br>
+            <label class="agreement">
+                <input type="checkbox" id="agreement"
+                       required>
+                <span>
+                    I certify that the information provided is true
+                    and correct to the best of my knowledge.
+                </span>
+            </label>
+
+        </div>
+
+        <div class="actions">
+            <button type="button" class="secondary"
+                    id="prevBtn" onclick="previous()">
+                ← Previous
+            </button>
+
+            <button type="button" id="nextBtn"
+                    onclick="next()">
+                Next →
+            </button>
+
+            <button type="submit" id="submitBtn"
+                    class="hidden">
+                Submit Application
+            </button>
+        </div>
+
+        </form>
+    </div>
+</div>
+
+<!-- SUCCESSFUL SUBMISSION -->
+<div class="container hidden" id="successPage">
+    <div class="card receipt">
+
+        <h2 class="receipt-title">✓ Application Submitted!</h2>
+
+        <p>
+            Congratulations! Your enrollment application has
+            been successfully submitted in this demonstration portal.
+        </p>
+
+        <div class="receipt-number" id="applicationNumber"></div>
+
+        <span class="status">SUBMITTED</span>
+
+        <hr class="receipt-divider">
+
+        <div id="receiptDetails" class="receipt-details"></div>
+
+        <br>
+        <p class="receipt-note">
+            Please keep your application reference number for
+            future reference. Actual admission and enrollment
+            are subject to official college evaluation.
+        </p>
+
+        <div class="actions no-print">
+            <button onclick="window.print()">Print Receipt</button>
+            <button class="secondary" onclick="backDashboard()">
+                Back to Dashboard
+            </button>
+        </div>
+    </div>
+</div>
+
+<footer>
+    © 2026 Davao del Norte State College | Enrollment Portal Prototype
+    <br>Unofficial student project – Not an official DNSC website.
+</footer>
+
+<script>
+let currentStep = 0;
+let submittedApplication = null;
+
+const sections = document.querySelectorAll(".section");
+const form = document.getElementById("enrollmentForm");
+
+// LOGIN
+document.getElementById("loginForm").addEventListener("submit", function(e) {
+    e.preventDefault();
+
+    const email = document.getElementById("email").value;
+    const password = document.getElementById("password").value; 
+
+    if (email === "student@dnsc.edu.ph" &&
+        password === "dnsc2026") {
+
+        document.getElementById("loginPage").classList.add("hidden");
+        document.getElementById("dashboard").classList.remove("hidden");
+        document.getElementById("studentEmail").textContent = email;
+        document.body.classList.remove("application-active");
+
+    } else {
+        alert("Invalid email or password. Please use the demo account.");
+    }
+});
+
+function logout() {
+    document.getElementById("dashboard").classList.add("hidden");
+    document.getElementById("application").classList.add("hidden");
+    document.getElementById("successPage").classList.add("hidden");
+    document.getElementById("loginPage").classList.remove("hidden");
+    document.getElementById("loginForm").reset();
+    document.body.classList.remove("application-active");
+}
+
+function startApplication() {
+    if (submittedApplication) {
+        alert("You have already submitted an application in this session.");
+        return;
+    }
+
+    document.getElementById("dashboard").classList.add("hidden");
+    document.getElementById("application").classList.remove("hidden");
+    document.body.classList.add("application-active");
+    currentStep = 0;
+    updateStep();
+}
+
+function updateStep() {
+    sections.forEach((section, index) => {
+        section.classList.toggle("hidden", index !== currentStep);
+    });
+
+    document.querySelectorAll(".nav button").forEach((button, index) => {
+        button.classList.toggle("active", index === currentStep);
+    });
+
+    document.getElementById("progressBar").dataset.step = currentStep + 1;
+
+    document.getElementById("prevBtn").classList.toggle(
+        "is-hidden-visually", currentStep === 0
+    );
+
+    document.getElementById("nextBtn").classList.toggle(
+        "hidden", currentStep === sections.length - 1
+    );
+
+    document.getElementById("submitBtn").classList.toggle(
+        "hidden", currentStep !== sections.length - 1
+    );
+
+    if (currentStep === sections.length - 1) {
+        generateReview();
+    }
+}
+
+function validateCurrentStep() {
+    const fields = sections[currentStep].querySelectorAll(
+        "input:not([type=file]):not([type=checkbox]), select, textarea"
+    );
+
+    for (const field of fields) {
+        if (!field.checkValidity()) {
+            field.reportValidity();
+            return false;
+        }
+    }
+
+    return true;
+}
+
+function next() {
+    if (!validateCurrentStep()) return;
+
+    if (currentStep < sections.length - 1) {
+        currentStep++;
+        updateStep();
+    }
+}
+
+function previous() {
+    if (currentStep > 0) {
+        currentStep--;
+        updateStep();
+    }
+}
+
+function goTo(step) {
+    if (step <= currentStep) {
+        currentStep = step;
+        updateStep();
+        return;
+    }
+
+    while (currentStep < step) {
+        if (!validateCurrentStep()) return;
+        currentStep++;
+    }
+
+    updateStep();
+}
+
+// REVIEW INFORMATION
+function generateReview() {
+    const data = new FormData(form);
+    const fields = [
+        ["First Name", "firstName"],
+        ["Middle Name", "middleName"],
+        ["Last Name", "lastName"],
+        ["Birthdate", "birthdate"],
+        ["Gender", "gender"],
+        ["Contact Number", "contact"],
+        ["Email", "studentEmail"],
+        ["Address", "address"],
+        ["Campus", "campus"],
+        ["Program", "program"],
+        ["Year Level", "yearLevel"],
+        ["Application Type", "applicationType"],
+        ["Academic Year", "academicYear"],
+        ["Semester", "semester"],
+        ["Previous School", "previousSchool"],
+        ["Parent / Guardian", "guardian"],
+        ["Relationship", "relationship"],
+        ["Guardian Contact", "guardianContact"]
+    ];
+
+    let html = "";
+
+    fields.forEach(([label, key]) => {
+        html += `
+            <div class="review-item">
+                <span>${label}</span>
+                <b>${escapeHTML(data.get(key) || "Not provided")}</b>
+            </div>
+        `;
+    });
+
+    const uploads = [
+        ["PSA Birth Certificate", "birthCertificate"],
+        ["Report Card", "reportCard"],
+        ["Good Moral", "goodMoral"],
+        ["2x2 ID Picture", "idPicture"]
+    ];
+
+    html += '<h3 class="review-heading">Uploaded Documents</h3>';
+
+    uploads.forEach(([label, key]) => {
+        const file = data.get(key);
+        html += `
+            <div class="review-item">
+                <span>${label}</span>
+                <b>${file && file.name ? escapeHTML(file.name) : "Not uploaded"}</b>
+            </div>
+        `;
+    });
+
+    document.getElementById("reviewContent").innerHTML = html;
+}
+
+function escapeHTML(value) {
+    return String(value).replace(/[&<>"']/g, char => ({
+        "&": "&amp;",
+        "<": "&lt;",
+        ">": "&gt;",
+        '"': "&quot;",
+        "'": "&#039;"
+    })[char]);
+}
+
+// SUBMIT APPLICATION
+form.addEventListener("submit", function(e) {
+    e.preventDefault();
+
+    if (!validateCurrentStep()) return;
+
+    if (!document.getElementById("agreement").checked) {
+        alert("Please certify your application before submitting.");
+        return;
+    }
+
+    const data = new FormData(form);
+    const reference = "DNSC-2026-" +
+        Math.floor(100000 + Math.random() * 900000);
+
+    const studentName = [
+        data.get("firstName"),
+        data.get("middleName"),
+        data.get("lastName")
+    ].filter(Boolean).join(" ");
+
+    submittedApplication = {
+        reference: reference,
+        name: studentName,
+        email: data.get("studentEmail"),
+        program: data.get("program"),
+        year: data.get("yearLevel"),
+        campus: data.get("campus"),
+        date: new Date().toLocaleDateString()
+    };
+
+    document.getElementById("application").classList.add("hidden");
+    document.getElementById("successPage").classList.remove("hidden");
+    document.body.classList.remove("application-active");
+
+    document.getElementById("applicationNumber").textContent = reference;
+
+    document.getElementById("receiptDetails").innerHTML = `
+        <div class="review-item">
+            <span>Student Name</span>
+            <b>${escapeHTML(studentName)}</b>
+        </div>
+        <div class="review-item">
+            <span>Email Address</span>
+            <b>${escapeHTML(submittedApplication.email)}</b>
+        </div>
+        <div class="review-item">
+            <span>Degree Program</span>
+            <b>${escapeHTML(submittedApplication.program)}</b>
+        </div>
+        <div class="review-item">
+            <span>Year Level</span>
+            <b>${escapeHTML(submittedApplication.year)}</b>
+        </div>
+        <div class="review-item">
+            <span>Campus</span>
+            <b>${escapeHTML(submittedApplication.campus)}</b>
+        </div>
+        <div class="review-item">
+            <span>Date Submitted</span>
+            <b>${escapeHTML(submittedApplication.date)}</b>
+        </div>
+        <div class="review-item">
+            <span>Application Status</span>
+            <b class="submitted-status">Successfully Submitted</b>
+        </div>
+    `;
+
+    document.getElementById("dashStatus").textContent = "Submitted";
+    document.getElementById("receiptButton").classList.remove("hidden");
+});
+
+function showReceipt() {
+    if (!submittedApplication) return;
+
+    document.getElementById("dashboard").classList.add("hidden");
+    document.getElementById("successPage").classList.remove("hidden");
+    document.body.classList.remove("application-active");
+}
+
+function backDashboard() {
+    document.getElementById("successPage").classList.add("hidden");
+    document.getElementById("dashboard").classList.remove("hidden");
+    document.body.classList.remove("application-active");
+}
+</script>
+
+</body>
+</html>
